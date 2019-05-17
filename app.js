@@ -1,6 +1,6 @@
-function add(param1, param2, ) {
+function reverseString(str) {
 
-  return param1 + param2;
+  return str.split("").reverse().join("");
 
-}
-console.log(add(1. 2));
+
+  console.log(reverseString("hello"));
