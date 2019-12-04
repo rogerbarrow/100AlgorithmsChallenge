@@ -1,15 +1,8 @@
-function palindrome(str) {
-  const reversed = str
-    .split('')
-    .reverse()
-    .join('');
-
-  return str === reversed;
-}
-///////////////////////////////////////////////////////////
-
-function palindrome(str) {
-  return str.split('').every((char, i) => {
-    return char === str[str.length - i - 1];
-  });
+function maxChar(str) {
+  const charMap = {};
+  for (let char of str) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else charMap[char] = 1;
+  }
 }
