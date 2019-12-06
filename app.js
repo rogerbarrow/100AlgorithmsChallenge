@@ -1,8 +1,9 @@
-function maxChar(str) {
-  const charMap = {};
-  for (let char of str) {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else charMap[char] = 1;
-  }
+function reverseInt(n) {
+  const reversed = n
+    .toString()
+    .split('')
+    .reverse()
+    .join('');
+
+  return parseInt(revesed);
 }
